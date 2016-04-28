@@ -1,0 +1,7 @@
+program loginas;
+begin
+ WriteLn('********************************');
+ WriteLn('* Labas. Mano loginas Laukiniooke!*');
+ WriteLn('********************************');
+ ReadLn;
+end. 
