@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int sk1,sk2,sk3,sk4,sk5,sk6,sk7,sk8,sk9,sk10,skaicius,suma=0, suma1=0;
+    printf("Sveiki, suskaiciuosime duoto skaiciaus skaitmenine sakni\n");
+    printf("Iveskite skaiciu\n");
+    scanf("%i",&skaicius);
+    sk1=skaicius/1000000000%10;
+    sk2=skaicius/100000000%10;
+    sk3=skaicius/10000000%10;
+    sk4=skaicius/1000000%10;
+    sk5=skaicius/100000%10;
+    sk6=skaicius/10000%10;
+    sk7=skaicius/1000%10;
+    sk8=skaicius/100%10;
+    sk9=skaicius/10%10;
+    sk10=skaicius%10;
+    suma=sk1+sk2+sk3+sk4+sk5+sk6+sk7+sk8+sk9+sk10;
+if (suma>10)
+   {
+    sk1=suma/10%10;
+    sk2=suma%10;
+    suma1=sk1+sk2;
+    printf("Jusu skaiciaus skaitmenine saknis =%i",suma1);}
+else printf ("Jusu skaiciaus skaitmenine saknis =%i", suma);
+
+    return 0;
+}
